@@ -254,7 +254,7 @@ form#SearchForm_SearchForm fieldset{
 			margin: 0;
 		}
 		form#SearchForm_SearchForm input.action{
-			background: url(../images/search_icon.png) no-repeat center center;
+			background: url(../images/search_icon.png) no-repeat center -10px ;
 			margin: 0;
 			width: 45px;
 			height: 32px;
@@ -266,7 +266,7 @@ form#SearchForm_SearchForm fieldset{
 			text-indent: -5000px;
 		}
 		form#SearchForm_SearchForm input.action:hover{
-			border-color: #fff;	
+			background-position: center -60px
 		}
 
 /******************************
@@ -327,7 +327,7 @@ form#SearchForm_SearchForm fieldset{
 				font-size: 1.2em;
 			}	
 			form#SearchForm_SearchForm fieldset input.action{
-				height: 2.3em;
+				height: 2.3em;		
 			}
 			
 	#content p.message{
