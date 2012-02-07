@@ -1,0 +1,169 @@
+.BlogError {
+	text-align: center;
+}
+/* IE cuts the bottom of the tags off */
+* html #Sidebar p.tagcloud {
+	padding-bottom: 10px;
+}
+.BlogError p {
+	color: #fff;
+	display: inline;
+	background-color:	#f77;
+	padding: 7px;
+	font-weight:bold;
+}
+
+#BlogEntry_Form_BlogEntryForm #ContentLabel{
+	display:inline;
+}
+
+#BlogEntry_Form_BlogEntryForm .CompositeField {
+	position: relative;
+	width: 100%;
+}
+
+#BlogEntry_Form_BlogEntryForm #BBCodeHint {
+	cursor: pointer;
+	font-size:0.8em;
+	position: absolute;
+	left: 240px;
+	top: 3px;
+}
+#BlogEntry_Form_BlogEntryForm #BBTagsHolder{
+	display: block;
+	position: absolute;
+	top: 30px;
+	left: 325px;
+}
+.blogcontent .blogSummary {
+	border-bottom:  1px solid #e5e5e5;
+	border-top:  1px solid #fff;
+	padding: 15px 0;
+}
+	.blogcontent .blogSummary.first {
+		border-top:  none;
+	}
+	.blogcontent .blogSummary.last {
+		border-bottom:  none;
+	}
+#Content label{
+	margin-top: 0px;
+}
+#Layout p.authorDate,
+#Layout p.tags {
+	font-size: 0.9em;
+	color: #777;
+	margin: -15px 0 12px 0;
+}
+p.blogVitals {
+	text-align: right;
+	margin: 0;
+	color: #999;
+}
+a#editpost{
+	background: url(../images/edit.gif) no-repeat left center;
+	padding: 3px 0 3px 25px;
+}
+
+a#unpublishpost{
+	background: url(../images/delete.gif) no-repeat left center;
+	padding: 3px 0 3px 25px;
+}
+/**********************************
+ * 
+ *  Comments
+ *  
+ ********************************/		
+#PageComments_holder h4 {
+	margin: 20px 0;
+	padding:10px 0 10px 55px;
+	border-bottom: none;
+	font-size: 22px;
+	background: url(../images/comments.png) no-repeat center left;
+}
+#CommentHolder ul {
+	list-style: none;
+	margin: 20px 0;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #e5e5e5;
+}
+	#CommentHolder ul ul{
+		border:none;
+	}
+#PageComments li {
+	margin: 0;
+	padding: 10px 30px;
+	border-bottom: 1px solid #e5e5e5;
+	border-top: 1px solid #fff;	
+}
+	#PageComments li li{
+		border:none;
+	}
+	#PageComments li.odd {
+		background: #f3f3f3;
+	}
+	#PageComments li.even {
+		background: #f8f8f8;
+	}
+
+		#PageComments li p{
+			font-size: 1.4em;
+			padding: 10px 0;
+		}
+		#PageComments li p.info {
+			color: #666;
+			font-size: 1.2em;
+		}
+		.actionLinks li {
+		   display: inline;
+		   border-right: 1px solid #ddd;
+		}
+			.actionLinks li a {
+				padding-right: 3px;
+				font-size: 1.2em;
+			}
+   			.actionLinks li.last {
+      			border-right: none;
+   			}
+
+.commentrss {
+	background: transparent url(../images/rss_circle_comments.png) no-repeat center left;
+	padding: 3px 20px 3px 30px;
+	font-size: 1.4em;
+	line-height: 1.6em;
+	margin-left: 20px;
+}
+#PageCommentsPagination p {
+	text-align: center;
+	font-size: 1.2em;
+}
+#PageComments p {
+	font-size: 1em;
+	margin: 8px 0;
+}
+	#PageComments p.info {
+		color: #999;
+		margin: 0px;
+		padding: 0;
+		line-height: 1em;
+		font-size: 0.9em;
+	}
+#PageCommentInterface_Form_PostCommentForm_action_postcomment {
+	margin-bottom: 20px;
+}
+/**********************************
+ * 
+ *  Widgets
+ *  
+ ********************************/	
+.WidgetHolder .subscribeLink {
+	background: url(../images/rss_circle.png) no-repeat left center;
+	padding: 10px 10px 10px 35px;
+	font-size: 1.4em;
+}
+
+.BlogManagementWidget ul,
+.ArchiveWidget ul{
+	list-style: none;
+	margin-left: 0;
+}

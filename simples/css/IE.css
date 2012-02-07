@@ -1,0 +1,9 @@
+/**
+ SilverStripe Simples Theme
+ http://www.silverstripe.com
+ 
+ IE Hacks Stylesheet.
+*/
+html #header .nav{
+	top: 105px;
+}

@@ -1,0 +1,338 @@
+/******************************
+ * 
+ * Fieldset
+ * 
+ ******************************/
+form {
+	width: 420px;
+	background: #e6e6e6;
+	padding: 10px 20px 20px 20px;
+	border: 1px solid #cfcfcf;
+	margin: 10px 0;
+}
+fieldset {
+	border: 0;
+	font-size: 1.2em;
+}
+/******************************
+ * 
+ * Actions
+ * 
+ ******************************/
+.Actions{
+	text-align: right;
+}
+input.action,
+input.submit  {
+	padding: 7px 20px;
+	font-size: 1.2em;
+	border: 1px solid #065489;
+	border-radius: 4px;
+	background: #065489 url(../images/button_background.png) repeat-x top left;
+	color: #fff;
+	font-weight: bold;
+	text-shadow: 0 1px 1px #065489;
+}
+input.action:hover,
+input.action:focus {
+	cursor: pointer;
+	background: #3684a9 url(../images/button_background.png) repeat-x bottom left;
+}
+/******************************
+ * 
+ * Formatting
+ * 
+ ******************************/
+form ul {
+	list-style: none;
+}
+.middleColumn {
+ 	display: block;
+ 	margin: 10px 10px 10px 0;
+	clear: left;
+}
+	div.tab .field .middleColumn {
+		clear: none !important;
+ 		margin: 0 !important;
+		width: auto;
+	}
+	
+	.middleColumn .middleColumn {
+		margin-left: 0;
+		margin-right: 0;
+		padding: 0;
+	}
+	
+	.middleColumn .message {
+		margin: 0;
+	}
+	
+/******************************
+ * 
+ * Input / Textarea
+ * 
+ ******************************/	
+
+input.text, textarea, select {
+	padding: 10px 10px;
+	border: 1px solid #A7A7A7;
+	color: #000;
+	font-size: 1.2em;
+	width: 98%;
+}
+
+textarea {
+	font-family: Verdana, Tahoma, sans-serif;
+	font-size: 1.2em;
+}
+input:focus span, textarea:focus span {
+	border: 3px solid #000;
+}
+
+/* Placeholder text */
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color:    #444;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    color:    #444;
+}
+/******************************
+ * 
+ * Date Time
+ * 
+ ******************************/	
+form .date input.month,
+form .date input.day,
+form .date input.year {
+	width: auto;
+}
+
+form .datetime .clear {
+	clear: both;
+}
+
+form .datetime .date,
+form .datetime .time {
+	float: left;
+	clear: none;
+	width: auto;
+}
+	form .datetime .middleColumn .middleColumn {
+		width: auto;
+	}
+	form .datetime .date input,
+	form .datetime .time input {
+		width: auto;
+	}
+/******************************
+ * 
+ * Dropdown
+ * 
+ ******************************/	
+select {
+	width: auto;
+}
+/******************************
+ * 
+ * Checkboxes 
+ * 
+ ******************************/	
+ul.optionset {
+	margin: 0;
+	overflow: hidden;
+}
+	ul.optionset li {
+		margin: 6px 0;
+		clear: both;
+	}
+		ul.optionset li input {
+			float: left;
+			margin: 0 6px;
+		}
+		ul.optionset li label {
+			margin: 0;
+		}
+/******************************
+ * 
+ * Labels
+ * 
+ ******************************/	
+label {
+ 	display: block;
+	margin: 15px 0 0 0;
+	color: #444;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+label.right {
+	display:inline;
+	font-size: 1em;
+	font-weight: normal;
+}
+	label:hover {
+		cursor: pointer;
+	}
+
+label.error{
+	border: 1px solid #aaa;
+	background: #aa2222;
+	color: #fff;
+	padding: 5px;
+	margin: 0;
+}
+input.error{
+	border: 1px solid  #aa2222;
+}
+/******************************
+ * 
+ * Feedback Messages
+ * 
+ ******************************/		
+#content p.message{
+	color: black;
+	background: #c9e3fa url(../images/icons/messageTick.png) 10px 50% no-repeat;
+	border: 2px solid #72b3ee;
+	margin: 1em 2%;
+	padding: 1em 2% 1em 10%;
+	width: 86%;
+}
+#content p.results {
+	background: #c9e3fa url(../images/icons/messageArrowDown.png) 10px 50% no-repeat;
+}
+#content p.bad {
+	background: #f1aaaa url(../images/icons/exclamationErrorBig.png) 10px 50% no-repeat;
+	border-color: #cc8888;
+	color: #8c3838;
+}
+#content p.success {
+	background: #d1ddc2 url(../images/icons/bigSuccess.png) 10px center no-repeat;
+	border-color: #4b7a15;
+}
+#content p.warning {
+	background: #fcee9f url(../images/icons/bigOops.png) 10px center no-repeat;
+	border-color: #e0c21b;
+}
+
+/******************************
+ * 
+ * Search form
+ * 
+ ******************************/	
+/* Search form position */	
+form#SearchForm_SearchForm{
+	border: none;
+	margin: 0;
+	float: right;
+	margin-top: 8px;
+	background: none;
+	padding: 0;
+	border: none;
+} 
+form#SearchForm_SearchForm fieldset{
+	float: right;
+	width: 225px;
+	position: relative;
+}
+	form#SearchForm_SearchForm .middleColumn{
+		width: 195px;
+		padding: 0;
+		margin: 0;
+		position: absolute;
+		left: 0;
+		top: 0;	
+		background: none;
+	}
+		form#SearchForm_SearchForm input.text{
+			background: #f2f2f2;
+			border: 1px solid #023558;
+			width: 170px;
+			border-radius: 4px;
+			color: #696969;
+			padding: 7px 10px;
+			margin: 0;
+		}
+		form#SearchForm_SearchForm input.action{
+			background: url(../images/search_icon.png) no-repeat center center;
+			margin: 0;
+			width: 45px;
+			height: 32px;
+			position: absolute;
+			right: 0;
+			top: 0;
+			border-radius: 4px;		
+			text-transform: capitalize;
+			text-indent: -5000px;
+		}
+		form#SearchForm_SearchForm input.action:hover{
+			border-color: #fff;	
+		}
+
+/******************************
+ * 
+ * Login form
+ * 
+ ******************************/	
+#MemberLoginForm_LoginForm{
+	margin: 0 auto;
+	padding: 0px 20px 0 20px;
+	border: 1px solid #ccc;
+}
+#MemberLoginForm_LoginForm .Actions{
+	margin-top: -30px;
+}
+#MemberLoginForm_LoginForm #Remember{
+	margin-top: 20px;
+}
+#MemberLoginForm_LoginForm #ForgotPassword{
+	padding-top: 20px;
+}
+
+/* --------------------------------------------------------
+ * Mobile - see typography.css for font sizing, layout.css for layout  
+ * -------------------------------------------------------- */
+@media (min-device-width:1024px) and (max-width:509px), (max-device-width:480px) {
+
+/******************************
+ * 
+ * Forms
+ * 
+ ******************************/	
+	form {
+		width: 90%;
+		background: #e6e6e6;
+		padding: 1em 5% 2em 5%;
+		border: 1px solid #cfcfcf;
+	}	
+
+	/* Search Form */
+	#MemberLoginForm_LoginForm{
+		padding: 1em 5% 2em 5%;
+	}
+
+	/* Search Form */
+	form#SearchForm_SearchForm{
+		width: 100%;
+		margin: 0;
+		background: #023558;
+	}			
+		form#SearchForm_SearchForm fieldset{
+			width: 225px;
+			margin: 0 auto;
+			float: none;
+			height: 2.4em;
+		}	
+			form#SearchForm_SearchForm fieldset input.text{
+				font-size: 1.2em;
+			}	
+			form#SearchForm_SearchForm fieldset input.action{
+				height: 2.3em;
+			}
+			
+	#content p.message{
+		padding: 1em 2% 1em 24%;
+		width: 72%;
+	}					
+}
+

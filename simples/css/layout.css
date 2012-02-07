@@ -1,0 +1,443 @@
+/*
+ * -----Layout CSS-------
+ * 
+ * CSS page Layout
+ * 
+ * Aab Web 2011
+ * 
+ * author: Aram Balakjian
+ * 
+ * v0.2 - 04.07.2011
+ * 
+ */
+/**********************************
+ * 
+ *  Reset - using Normalize.css (http://necolas.github.com/normalize.css/)
+ *  
+ ********************************/
+@import "normalize.css";
+
+/**********************************
+ * 
+ *  Utils
+ *  
+ ********************************/
+.clear{ clear:both; }
+.hidden{ display: none;}
+.nolist li{list-style: none;margin: 0;}
+/**********************************
+ * 
+ *  Core
+ *  
+ ********************************/
+html {
+	background: #f5f5f5 url(../images/html_background.png) repeat-x center top;
+}
+	body {
+		color: #333;
+		font-family: Arial, Helvetica, sans-serif;
+	 	font-size: 62.5%;
+	}
+/**********************************
+ * 
+ *  Containers 
+ *  
+ ********************************/
+#container {
+	margin: 0 auto;
+	width: 980px;
+}	
+	#layout {
+		clear: both;
+		margin: 0 auto;
+		width: 98%;
+	}
+		#layout .twoCol {
+			background: url(../images/sidebar_shadow.png) repeat-y 20%;
+		}
+		#content {	
+			float: right; 	
+			padding: 0px 40px 20px 40px;	
+			text-align: left;
+			width: 70%;		
+			margin-top: 30px;
+		}
+/**********************************
+ * 
+ *  Navbar
+ *  
+ ********************************/
+#header {
+	/* SET HEADER BG HERE (960px * 135px)
+		background: url([header_background.png]) no-repeat top left;
+ 	*/	
+	padding: 20px 10px 0;
+	margin: 0 auto;
+	position: relative;
+	width: 960px;
+	height: 126px;
+}
+	#header a.siteName{
+			/* SET YOUR LOGO HERE 
+				background: #888 url([logo.png]) no-repeat top left;
+				text-indent: -5000px;	
+		 	*/
+		 	font-size: 3.6em;
+		 	font-weight: bold;
+		 	font-style: italic;
+		 	color: #c2d9e9;
+		 	text-shadow: 1px 0 #023558;
+		 	text-decoration: none;
+			display: block;		 	
+	}
+		#header a.siteName span { 
+			display: block;
+			padding-left: 60px;
+			font-size: 0.6em;
+			color: #a4d3f2;
+			font-style: normal;
+		}
+
+	/* Menu 1 */
+	#header .nav { 
+		position: absolute;
+		top: 95px;
+		right: 0;
+		list-style: none; 
+		padding: 0 10px 0 0;
+	}
+		#header .nav li { 		
+			float: left;
+			margin: 0 0 0 15px; 
+		}
+		#header .nav li a { 
+			color: #fff;
+			text-shadow: 1px 0 #023558;
+			display: block; 
+			float: left;
+			font-size: 1.4em; 
+			padding: 12px 15px;
+			text-decoration: none;
+		}	
+			#header .nav li a:hover{ 
+				background: #2b6f9d;
+				border-radius: 3px 3px  0 0 ;
+			}	
+			 
+			#header .nav li a.section,
+			#header .nav li a.current,
+			#header .nav li a.section:hover,
+			#header .nav li a.current:hover {
+				background: #f5f5f5;
+				border-radius: 3px 3px  0 0 ;
+				border: 1px solid #023558;
+				border-bottom: none;
+				color: #065489;
+				text-shadow: 1px 0 #fff;
+			}
+/**********************************
+ * 
+ *  Breadcrumbs
+ *  
+ ********************************/
+#Breadcrumbs { 
+ 	color: #000000;
+	font-size: 0.9em; 
+	text-align: left;	
+}
+		#Breadcrumbs p {
+			padding:5px 0;
+		}
+/**********************************
+ * 
+ *  Sidebar
+ *  
+ ********************************/
+#sidebar {
+	float: left;
+	width: 20%;
+	margin-top: 30px;	
+}
+	#sidebar h3{
+		font-size: 1.8em;
+		color: #939393;
+		font-weight: normal;
+		margin-top: 0;
+	}
+	/* Menu 2 */
+	#sidebar ul.menu2{
+		margin: 20px 0;	
+		border-top:  1px solid #e5e5e5;	
+		border-bottom: 1px solid #fff;
+		padding: 0;
+	}	
+		#sidebar ul.menu2 li { 
+    			margin: 0;			 
+    			list-style: none;
+
+    		}
+				#sidebar ul.menu2 li a {
+					color: #065489;
+					display: block;
+					font-size: 1.4em;
+					padding: 15px 5px;
+					text-decoration: none;
+					border-top: 1px solid #fff;
+					border-bottom:  1px solid #e5e5e5;			
+				}	
+				#sidebar ul.menu2 li a:hover{
+					background: #e1eef6;
+				}
+				#sidebar ul.menu2 a.current{
+					color: #444;
+					font-weight: bold;		
+				}
+			/* Menu 3 */
+			#sidebar ul.menu2 ul.menu3{
+				padding-left: 15px;
+				border-top: 1px solid #fff;
+				border-bottom:  1px solid #e5e5e5;				
+			}
+				#sidebar ul.menu2 ul.menu3 li.first a{ 
+		 			border-top: none;
+		    	}
+				#sidebar ul.menu2 ul.menu3 li.last a{ 
+		 			border-bottom: none;
+		    	}
+				#sidebar ul.menu2 ul.menu3 li a {
+					font-size: 1.2em;
+				}
+				
+/* Widgets */
+#sidebar .WidgetHolder{
+
+}				
+	#sidebar .WidgetHolder h3{
+		border-bottom:  1px solid #e5e5e5;	
+		padding: 0 0 18px 0;	
+		margin: 0;
+	}
+	#sidebar .WidgetHolder .widgetContent{
+		border-top: 1px solid #fff;
+		padding: 10px 0 20px 0;
+	}
+/**********************************
+ * 
+ *  Footer
+ *  
+ ********************************/
+#footer { 
+ 	clear: both;  	
+ 	margin: 0;
+ 	padding: 20px 0;
+ 	border-top: 1px solid #cfcfcf;
+}
+	#footer p{
+		color: #3f3f3f;
+		font-size: 1.2em;
+		text-align: center;
+	}
+
+
+
+/**********************************
+ * 
+ *  Search Results
+ *  
+ ********************************/		
+ul#SearchResults {
+	margin: 10px 0;
+	border-bottom:  1px solid #fff;	
+}
+	ul#SearchResults li {
+		list-style: none;
+		margin: 0;
+		padding: 10px 0;
+		font-size: 1em;
+		border-top: 1px solid #fff;
+		border-bottom:  1px solid #e5e5e5;			
+	}
+		ul#SearchResults li.first {
+			border-top: none;
+		}
+/**********************************
+ * 
+ *  Messages
+ *  
+ ********************************/		
+.message {
+	margin: 15px;
+	padding: 5px;
+	width: 92%;
+	color: #979908;
+	border: 4px solid #F7F8B4;
+	background: #FFFFEA;
+}
+span.middleColumn .message {
+	margin: 4px 0 0 3px;
+}
+.required {
+	margin: 4px 0 0 3px;
+	padding: 5px;
+	width: 92%;
+	color: #DC1313;
+	border: 4px solid #FF7373;
+	background: #FED0D0;
+}
+
+/* --------------------------------------------------------
+ * Mobile - see typography.css for font sizing, forms.css for form  
+ * -------------------------------------------------------- */
+@media (min-device-width:1024px) and (max-width:509px), (max-device-width:480px) {
+
+/******************************
+ * 
+ * Layout
+ * 
+ ******************************/	
+	html{
+		background-image: none;
+	}
+	body{
+		margin: 0;
+		padding: 0;
+	}
+	
+	#container, #footer{		
+		padding: 4%;
+		width: 92%;
+	}
+	#layout,#sidebar, #content{
+		width: 100%;
+		padding: 0;
+	} 
+	#layout .twoCol { 
+		background: none;
+	}
+	/* Header */
+	#header {
+		background: #1b6496;
+		border-top: 6px solid #023558;
+		height: auto;
+		width: 100%;
+		padding: 0px 0 15px 0;
+		margin: 0;
+	}
+		#header a.siteName{
+			font-size: 3em;
+			display: block;
+			padding: 0.6em 0 0 0;
+			margin: 0;
+			text-align: center;
+			clear: both;
+		}		
+			#header a.siteName span{
+				padding: 0;
+			}
+	/* Nav */
+	#header .nav{
+		float: none;
+		clear: both;
+		margin: 20px 10px;
+		position: static;
+	}
+	#header .nav li {
+		margin: 0;
+	}
+		#header .nav li a{
+			padding: 10px 15px;
+			font-size: 1.6em;		
+		}
+		#header .nav li a:hover{
+			border-radius: 4px;
+		}
+		#header .nav li a.current,
+		#header .nav li a.section{
+			border-radius: 4px;
+			border: 1px solid #023558;
+		}
+	#sidebar{
+		float: none;
+		clear: both;
+		margin: 0 0 15px 0;
+		padding: 0;
+		border-top: 1px solid #ececec;
+	}
+		#sidebar{
+			border-top: 
+		}
+		#sidebar h3{
+			border-top: 1px solid #fff;
+			padding: 15px 0 0 0;
+			margin: 0;
+		}
+			#sidebar #menu2 li a{
+				padding: 0 5px;
+			}
+
+	#content {
+
+	}
+	#footer-menu {
+		display: none;
+	}
+	#menu li.current, #menu li.section {
+		background-position: right -1px;
+	}
+	a.button {
+		display: block;
+		font-size: 14px;
+		margin-right: 0;
+		padding: 9px 0;
+		width: 100%;
+		text-align: center;
+		-webkit-border-radius: 6px;
+	   	-moz-border-radius: 6px;
+	    border-radius: 6px;
+	}
+	a.tag {
+		font-size: 13px;
+		font-weight: bold;
+		line-height: 2.0769;
+		padding: 0 9px;
+		-webkit-border-radius: 6px;
+	   	-moz-border-radius: 6px;
+	    border-radius: 6px;
+	}
+	.comments {
+		display: block;
+		margin-bottom: 9px;
+	}
+	.ArchiveWidget,
+	.SubscribeRSSWidget,
+	.TagCloudWidget,
+	.ArchiveWidget {
+		display: none;
+	}	
+	#breadcrumbs {
+		font-size: 13px;
+	}
+	#forum-search {
+		float: none;
+	}
+	#forum-search .text {
+		float: none;
+		width: 96%;
+		margin: 0 0 18px 0;
+	}
+	#forum-login {
+		float: none;
+		margin: 0 0 36px 0;
+		padding: 9px;
+	}
+	#forum-jump {
+		float: none;
+		overflow: hidden;
+	}
+	#forum-jump select {
+		width: auto;
+	}
+	.forum-body {
+		margin: 0 -18px 0 -18px;
+	}
+}

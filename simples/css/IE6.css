@@ -1,0 +1,25 @@
+/* Menu 2 */	
+html #sidebar{
+	width: 175px;
+}
+html #sidebar ul.menu2 li { 		
+	width: 180px; 
+}
+	/* Menu 3 */
+	html #sidebar ul.menu2 ul.menu3 li { 
+		 width: 160px; 	
+	}
+/**********************************
+ * 
+ *  Footer
+ *  
+ ********************************/
+	/* Upper */	
+		html #footer .triCol .col{
+			width: 25%;
+			margin-right: 5%;
+		}	    	
+		html #footer .quadCol .col{
+			width: 18%;
+			margin-right: 4%;
+		}	    	
