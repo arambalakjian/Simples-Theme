@@ -10,10 +10,12 @@
                 <a class="$LinkingMode" href="$Link" title="Go to $Title Page">$MenuTitle</a>
                 <% if LinkOrSection = section %>
                     <% if Children %>
-                    <ul class="menu3">                  
-                        <li class="$FirstLast">
-                            <a class="$LinkingMode" href="$Link">$MenuTitle</a>
-                        </li>      
+                    <ul class="menu3">    
+                        <% control Menu(3) %>              
+                            <li class="$FirstLast">
+                                <a class="$LinkingMode" href="$Link">$MenuTitle</a>
+                            </li> 
+                        <% end_control %>     
                     </ul>              
                     <% end_if %>
                 <% end_if %>
