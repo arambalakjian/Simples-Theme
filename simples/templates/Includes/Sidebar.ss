@@ -11,7 +11,7 @@
                 <% if LinkOrSection = section %>
                     <% if Children %>
                     <ul class="menu3">    
-                        <% control Menu(3) %>              
+                        <% control Children %>              
                             <li class="$FirstLast">
                                 <a class="$LinkingMode" href="$Link">$MenuTitle</a>
                             </li> 
