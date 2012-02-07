@@ -8,7 +8,7 @@
             <% control Menu(2) %>       
             <li>
                 <a class="$LinkingMode" href="$Link" title="Go to $Title Page">$MenuTitle</a>
-                <% if LinkOrSection = Section %>
+                <% if LinkOrSection = section %>
                     <% if Children %>
                     <ul class="menu3">                  
                         <li class="$FirstLast">
